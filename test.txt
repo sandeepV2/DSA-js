@@ -1,0 +1,11 @@
+clean setup
+clean
+clean assert_clean
+setup
+teardown setup
+print_resources
+setup_pre_first_run
+clean setup_pre_first_run
+clean setup_pre_first_run_cm
+setup_private_cloud
+add_cluster

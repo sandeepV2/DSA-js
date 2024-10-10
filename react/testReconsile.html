@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+    </head>
+    <body>
+        <div id="react"></div>
+        <div id="venilla"></div>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+                function showTime() {
+                    const time = new Date().toLocaleTimeString();
+                    const timeElement = (
+                        <div>
+                            <p>It is now {time} o' clock.</p>
+                        </div>
+                    );  
+                    ReactDOM.render(timeElement, document.getElementById('react'));
+                }
+
+                setInterval(showTime, 1000);
+                    function changeTime() {
+                        const time = new Date().toLocaleTimeString();
+                        const target = document.getElementById('venilla');
+                        target.textContent = 'It is now ' + time + " o' clock";
+                    }
+                    setInterval(changeTime, 1000);
+        </script>
+    </body>
+</html>

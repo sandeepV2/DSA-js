@@ -1,0 +1,27 @@
+Components:
+    - Elevator system
+    - Building
+    - Elevator Car
+    - Elevator Panel
+    - Elevator Button
+    - Hall Display
+    - Hall Button
+    - Floors
+
+
+Inheritence:
+    - Hall Button > Button 
+    - Elevator Button > Button 
+
+Aggregation: 
+    - Builing - Elevator system.
+
+Composition: 
+    - Building - Elevator Car, Floors
+    - The ElevatorCar is composed of Door, ElevatorPanel, and Display.
+    - The Floor is composed of HallPanel and Display.
+    - The HallPanel is composed of the HallButton.
+    - The ElevatorPanel is composed of the ElevatorButton.
+
+State & Delegation system.
+

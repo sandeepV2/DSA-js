@@ -1,0 +1,13 @@
+
+static polymorphism -> Method overloading.
+
+Static polymorphism is also known as compile-time polymorphism, and it is achieved by method overloading or operator overloading.
+
+Method overloading#
+Methods are said to be overloaded if a class has more than one method with the same name, but either the number of arguments is different, or the type of arguments is different. We have implemented method overloading using two functions with the same name but with different numbers of arguments. You can see this in the implementation below.
+
+
+dynamic polymorphism -> method overriding. Method from parent class is overridden in child class.
+
+
+operator overloading is not supported in java & javascript.

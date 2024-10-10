@@ -1,0 +1,9 @@
+
+-> Mapping fields in raw client data to ActivityLog fields. 
+
+-> Concrete version of BaseLogParser and use in ActivityLogIngester ( Object composition) - Part of relation. 
+
+
+-- Sys design diagrams, flow charts, visual aids. 
+
+--
